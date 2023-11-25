@@ -1,0 +1,16 @@
+[Unit]
+Description=Application autostart service
+After=graphics.target
+
+[Service]
+Type=simple
+
+#Environment=QT_QPA_PLATFORM=wayland
+#Environment=XDG_RUNTIME_DIR=/run/user/0
+
+ExecStart=~/autostart.sh
+Restart=always
+RestartSec=25
+
+[Install]
+WantedBy=multi-user.target
