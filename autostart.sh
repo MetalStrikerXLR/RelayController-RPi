@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 ~/relayTimerRPi/main.py
+python3 ~/RelayController-RPi/main.py

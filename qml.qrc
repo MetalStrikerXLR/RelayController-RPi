@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Assets/Components/BaseComponents/ComponentAssets/push_button_pressed.png</file>
+        <file>Assets/Components/BaseComponents/ComponentAssets/push_button_unpressed.png</file>
+        <file>Assets/Components/BaseComponents/ComponentAssets/toggle_button_off_pressed_state.png</file>
+        <file>Assets/Components/BaseComponents/ComponentAssets/toggle_button_off_state.png</file>
+        <file>Assets/Components/BaseComponents/ComponentAssets/toggle_button_on_pressed_state.png</file>
+        <file>Assets/Components/BaseComponents/ComponentAssets/toggle_button_on_state.png</file>
+        <file>Assets/Components/BaseComponents/PushButton.qml</file>
+        <file>Assets/Components/BaseComponents/ToggleButton.qml</file>
+        <file>Assets/Components/CardItem/CardItem.qml</file>
+        <file>Assets/Images/program_disabled_a.png</file>
+        <file>Assets/Images/program_disabled_b.png</file>
+        <file>Assets/Images/program_disabled_c.png</file>
+        <file>Assets/Images/program_pressed_a.png</file>
+        <file>Assets/Images/program_pressed_b.png</file>
+        <file>Assets/Images/program_pressed_c.png</file>
+        <file>Assets/Images/program_unpressed_a.png</file>
+        <file>Assets/Images/program_unpressed_b.png</file>
+        <file>Assets/Images/program_unpressed_c.png</file>
+        <file>Assets/Images/relay_disabled.png</file>
+        <file>Assets/Images/relay_enabled.png</file>
+        <file>Assets/Images/reset_pressed.png</file>
+        <file>Assets/Images/reset_unpressed.png</file>
+    </qresource>
+</RCC>
