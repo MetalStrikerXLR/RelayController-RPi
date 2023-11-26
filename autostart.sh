@@ -5,4 +5,6 @@
 #export XAUTHORITY=/home/pi/.Xauthority
 #export QT_DEBUG_PLUGINS=1
 
+unclutter -idle 0
+
 /usr/bin/python3 /home/RelayControl-RPi/main.py

@@ -1,0 +1,17 @@
+* Install Raspbian Bullseye on Raspberry Pi
+
+* Run following:
+
+- sudo apt-get update
+- sudo apt-get upgrade
+- sudo apt-get install python3-pyqt5* python3-pandas unclutter
+
+* Copy 'RelayControl-RPi' from USB to '/home/RelayControl-RPi'
+
+* Copy 'autostart.service' to '/etc/systemd/system/autostart.service'
+
+* Enable autostart service:
+
+- sudo chmod +x /home/RelayControl-RPi/autostart.sh
+- sudo systemctl enable autostart.service
+- sudo systemctl start autostart.service
