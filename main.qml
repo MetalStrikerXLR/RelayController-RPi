@@ -9,8 +9,8 @@ Window {
     width: 1920
     height: 1080
     visible: true
-    visibility: Window.FullScreen
-    flags: Qt.FramelessWindowHint
+    //visibility: Window.FullScreen
+    //flags: Qt.FramelessWindowHint
     title: qsTr("Relay Board Controler")
 
     //-------------- Custom Responsiveness Controll Functions --------------//
@@ -83,9 +83,7 @@ Window {
             id: programBtnRow
             anchors.top: parent.top
             anchors.horizontalCenter: parent.horizontalCenter
-//            anchors.left: parent.left
             anchors.topMargin: respHeight(75)
-//            anchors.leftMargin: respWidth(30)
             spacing: 20
 
             property bool programSelected: false
@@ -535,7 +533,39 @@ Window {
             programC.checked = false
         }
 
+        function onGpioInputStateChanged(pressedBtn) {
+
+            if(pressedBtn == "BtnA") {
+                if(!programBtnRow.programSelected && !programA.checked) {
+                    programA.checked = true
+                }
+
+                if(programBtnRow.programSelected && programA.checked) {
+                    programA.checked = false
+                }
+            }
+            else if(pressedBtn == "BtnB") {
+                if(!programBtnRow.programSelected && !programB.checked) {
+                    programB.checked = true
+                }
+
+                if(programBtnRow.programSelected && programB.checked) {
+                    programB.checked = false
+                }
+            }
+            else if(pressedBtn == "BtnC") {
+                if(!programBtnRow.programSelected && !programC.checked) {
+                    programC.checked = true
+                }
+
+                if(programBtnRow.programSelected && programC.checked) {
+                    programC.checked = false
+                }
+            }
+        }
+
         function onRelayStateChanged(relayID, relayState) {
+            console.log("Hola")
             if(relayID == "R1") {
                 relay1.source = relayState ? "qrc:/Assets/Images/relay_enabled.png" : "qrc:/Assets/Images/relay_disabled.png"
             }
