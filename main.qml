@@ -9,8 +9,8 @@ Window {
     width: 1920
     height: 1080
     visible: true
-    //visibility: Window.FullScreen
-    //flags: Qt.FramelessWindowHint
+    visibility: Window.FullScreen
+    flags: Qt.FramelessWindowHint
     title: qsTr("Relay Board Controler")
 
     //-------------- Custom Responsiveness Controll Functions --------------//
@@ -535,83 +535,90 @@ Window {
 
         function onGpioInputStateChanged(pressedBtn) {
 
-            if(pressedBtn == "BtnA") {
+            if(pressedBtn === "BtnA") {
                 if(!programBtnRow.programSelected && !programA.checked) {
                     programA.checked = true
+                    return
                 }
 
                 if(programBtnRow.programSelected && programA.checked) {
                     programA.checked = false
+                    return
                 }
             }
-            else if(pressedBtn == "BtnB") {
+
+            if(pressedBtn === "BtnB") {
                 if(!programBtnRow.programSelected && !programB.checked) {
                     programB.checked = true
+                    return
                 }
 
                 if(programBtnRow.programSelected && programB.checked) {
                     programB.checked = false
+                    return
                 }
             }
-            else if(pressedBtn == "BtnC") {
+
+            if(pressedBtn === "BtnC") {
                 if(!programBtnRow.programSelected && !programC.checked) {
                     programC.checked = true
+                    return
                 }
 
                 if(programBtnRow.programSelected && programC.checked) {
                     programC.checked = false
+                    return
                 }
             }
         }
 
         function onRelayStateChanged(relayID, relayState) {
-            console.log("Hola")
-            if(relayID == "R1") {
+            if(relayID === "R1") {
                 relay1.source = relayState ? "qrc:/Assets/Images/relay_enabled.png" : "qrc:/Assets/Images/relay_disabled.png"
             }
-            if(relayID == "R2") {
+            if(relayID === "R2") {
                 relay2.source = relayState ? "qrc:/Assets/Images/relay_enabled.png" : "qrc:/Assets/Images/relay_disabled.png"
             }
-            if(relayID == "R3") {
+            if(relayID === "R3") {
                 relay3.source = relayState ? "qrc:/Assets/Images/relay_enabled.png" : "qrc:/Assets/Images/relay_disabled.png"
             }
-            if(relayID == "R4") {
+            if(relayID === "R4") {
                 relay4.source = relayState ? "qrc:/Assets/Images/relay_enabled.png" : "qrc:/Assets/Images/relay_disabled.png"
             }
-            if(relayID == "R5") {
+            if(relayID === "R5") {
                 relay5.source = relayState ? "qrc:/Assets/Images/relay_enabled.png" : "qrc:/Assets/Images/relay_disabled.png"
             }
-            if(relayID == "R6") {
+            if(relayID === "R6") {
                 relay6.source = relayState ? "qrc:/Assets/Images/relay_enabled.png" : "qrc:/Assets/Images/relay_disabled.png"
             }
-            if(relayID == "R7") {
+            if(relayID === "R7") {
                 relay7.source = relayState ? "qrc:/Assets/Images/relay_enabled.png" : "qrc:/Assets/Images/relay_disabled.png"
             }
-            if(relayID == "R8") {
+            if(relayID === "R8") {
                 relay8.source = relayState ? "qrc:/Assets/Images/relay_enabled.png" : "qrc:/Assets/Images/relay_disabled.png"
             }
-            if(relayID == "R9") {
+            if(relayID === "R9") {
                 relay9.source = relayState ? "qrc:/Assets/Images/relay_enabled.png" : "qrc:/Assets/Images/relay_disabled.png"
             }
-            if(relayID == "R10") {
+            if(relayID === "R10") {
                 relay10.source = relayState ? "qrc:/Assets/Images/relay_enabled.png" : "qrc:/Assets/Images/relay_disabled.png"
             }
-            if(relayID == "R11") {
+            if(relayID === "R11") {
                 relay11.source = relayState ? "qrc:/Assets/Images/relay_enabled.png" : "qrc:/Assets/Images/relay_disabled.png"
             }
-            if(relayID == "R12") {
+            if(relayID === "R12") {
                 relay12.source = relayState ? "qrc:/Assets/Images/relay_enabled.png" : "qrc:/Assets/Images/relay_disabled.png"
             }
-            if(relayID == "R13") {
+            if(relayID === "R13") {
                 relay13.source = relayState ? "qrc:/Assets/Images/relay_enabled.png" : "qrc:/Assets/Images/relay_disabled.png"
             }
-            if(relayID == "R14") {
+            if(relayID === "R14") {
                 relay14.source = relayState ? "qrc:/Assets/Images/relay_enabled.png" : "qrc:/Assets/Images/relay_disabled.png"
             }
-            if(relayID == "R15") {
+            if(relayID === "R15") {
                 relay15.source = relayState ? "qrc:/Assets/Images/relay_enabled.png" : "qrc:/Assets/Images/relay_disabled.png"
             }
-            if(relayID == "R16") {
+            if(relayID === "R16") {
                 relay16.source = relayState ? "qrc:/Assets/Images/relay_enabled.png" : "qrc:/Assets/Images/relay_disabled.png"
             }
         }

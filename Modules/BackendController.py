@@ -59,7 +59,7 @@ class BackendController(QObject):
             prev_state_btn_a = GPIO.input(list(input_pins)[0])
             prev_state_btn_b = GPIO.input(list(input_pins)[1])
             prev_state_btn_c = GPIO.input(list(input_pins)[2])
-            sleep(0.1)
+            sleep(0.2)
 
     def threaded_relay_control(self, program_id):
         # Read Relay Timing Info CSV file
