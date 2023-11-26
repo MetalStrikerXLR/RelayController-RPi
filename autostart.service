@@ -4,11 +4,13 @@ After=graphics.target
 
 [Service]
 Type=simple
+WorkingDirectory=/home/RelayControl-RPi
 
-#Environment=QT_QPA_PLATFORM=wayland
-#Environment=XDG_RUNTIME_DIR=/run/user/0
+#Environment=QT_QPA_PLATFORM=xcb
+Environment="DISPLAY=:0"
+Environment="XAUTHORITY=/home/pi/.Xauthority"
 
-ExecStart=~/autostart.sh
+ExecStart=/home/RelayControl-RPi/autostart.sh
 Restart=always
 RestartSec=25
 

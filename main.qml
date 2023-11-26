@@ -6,11 +6,11 @@ import "Assets/Components/BaseComponents"
 
 Window {
     id: appRoot
-    width: 800
-    height: 480
+    width: 1920
+    height: 1080
     visible: true
-    //visibility: Window.FullScreen
-    //flags: Qt.FramelessWindowHint
+    visibility: Window.FullScreen
+    flags: Qt.FramelessWindowHint
     title: qsTr("Relay Board Controler")
 
     //-------------- Custom Responsiveness Controll Functions --------------//

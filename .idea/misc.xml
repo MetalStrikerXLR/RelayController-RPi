@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.10 (RelayTimerRPi)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (RelayController-RPi)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (Qt-PyQt5-Relay-Controller-RPi)" project-jdk-type="Python SDK" />
 </project>
