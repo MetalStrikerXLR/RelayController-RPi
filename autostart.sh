@@ -8,4 +8,4 @@
 xhost + local:
 unclutter -idle 0
 
-/usr/bin/python3 /home/RelayControl-RPi/main.py
+/usr/bin/python3 /home/<user>/RelayController-RPi/main.py
