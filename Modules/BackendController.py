@@ -82,10 +82,10 @@ class BackendController(QObject):
                 relay_id = list(relay_pins.values())[i]
 
                 if relay_state == 'On':
-                    GPIO.output(relay_pin, GPIO.HIGH)
+                    GPIO.output(relay_pin, GPIO.LOW)
                     self.relayStateChanged.emit(relay_id, True)
                 else:
-                    GPIO.output(relay_pin, GPIO.LOW)
+                    GPIO.output(relay_pin, GPIO.HIGH)
                     self.relayStateChanged.emit(relay_id, False)
 
             # Check if it's not the last row and the next time is not empty
@@ -117,9 +117,9 @@ class BackendController(QObject):
     @pyqtSlot()
     def initialize_gpio(self):
         GPIO.setmode(GPIO.BCM)
-        GPIO.VERBOSE = False
         for pin in relay_pins:
             GPIO.setup(pin, GPIO.OUT)
+            GPIO.output(pin, GPIO.HIGH)
 
         for pin in input_pins:
             GPIO.setup(pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
@@ -129,7 +129,7 @@ class BackendController(QObject):
         self.m_stop_thread = True
         for pin in relay_pins.keys():
             relay_id = relay_pins[pin]
-            GPIO.output(pin, False)
+            GPIO.output(pin, GPIO.HIGH)
             self.relayStateChanged.emit(relay_id, False)
 
     @pyqtSlot()
