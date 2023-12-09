@@ -193,13 +193,13 @@ Window {
             anchors.topMargin: respHeight(150)
 
             Image {
-                id: relay1
+                id: relay16
                 width: respWidth(62)
                 height: respHeight(62)
                 source: "qrc:/Assets/Images/relay_disabled.png"
 
                 Label {
-                    text: "R1"
+                    text: "R16"
                     color: "#1B1B1B"
                     font.family: "Poppins"
                     font.pixelSize: respAvg(24)
@@ -212,13 +212,13 @@ Window {
             }
 
             Image {
-                id: relay2
+                id: relay15
                 width: respWidth(62)
                 height: respHeight(62)
                 source: "qrc:/Assets/Images/relay_disabled.png"
 
                 Label {
-                    text: "R2"
+                    text: "R15"
                     color: "#1B1B1B"
                     font.family: "Poppins"
                     font.pixelSize: respAvg(24)
@@ -231,13 +231,13 @@ Window {
             }
 
             Image {
-                id: relay3
+                id: relay14
                 width: respWidth(62)
                 height: respHeight(62)
                 source: "qrc:/Assets/Images/relay_disabled.png"
 
                 Label {
-                    text: "R3"
+                    text: "R14"
                     color: "#1B1B1B"
                     font.family: "Poppins"
                     font.pixelSize: respAvg(24)
@@ -250,13 +250,13 @@ Window {
             }
 
             Image {
-                id: relay4
+                id: relay13
                 width: respWidth(62)
                 height: respHeight(62)
                 source: "qrc:/Assets/Images/relay_disabled.png"
 
                 Label {
-                    text: "R4"
+                    text: "R13"
                     color: "#1B1B1B"
                     font.family: "Poppins"
                     font.pixelSize: respAvg(24)
@@ -269,13 +269,13 @@ Window {
             }
 
             Image {
-                id: relay5
+                id: relay12
                 width: respWidth(62)
                 height: respHeight(62)
                 source: "qrc:/Assets/Images/relay_disabled.png"
 
                 Label {
-                    text: "R5"
+                    text: "R12"
                     color: "#1B1B1B"
                     font.family: "Poppins"
                     font.pixelSize: respAvg(24)
@@ -288,13 +288,13 @@ Window {
             }
 
             Image {
-                id: relay6
+                id: relay11
                 width: respWidth(62)
                 height: respHeight(62)
                 source: "qrc:/Assets/Images/relay_disabled.png"
 
                 Label {
-                    text: "R6"
+                    text: "R11"
                     color: "#1B1B1B"
                     font.family: "Poppins"
                     font.pixelSize: respAvg(24)
@@ -307,32 +307,13 @@ Window {
             }
 
             Image {
-                id: relay7
+                id: relay10
                 width: respWidth(62)
                 height: respHeight(62)
                 source: "qrc:/Assets/Images/relay_disabled.png"
 
                 Label {
-                    text: "R7"
-                    color: "#1B1B1B"
-                    font.family: "Poppins"
-                    font.pixelSize: respAvg(24)
-                    font.weight: Font.DemiBold
-
-                    anchors.bottom: parent.top
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.bottomMargin: respHeight(13)
-                }
-            }
-
-            Image {
-                id: relay8
-                width: respWidth(62)
-                height: respHeight(62)
-                source: "qrc:/Assets/Images/relay_disabled.png"
-
-                Label {
-                    text: "R8"
+                    text: "R10"
                     color: "#1B1B1B"
                     font.family: "Poppins"
                     font.pixelSize: respAvg(24)
@@ -357,20 +338,20 @@ Window {
                     font.pixelSize: respAvg(24)
                     font.weight: Font.DemiBold
 
-                    anchors.top: parent.bottom
+                    anchors.bottom: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.topMargin: respHeight(13)
+                    anchors.bottomMargin: respHeight(13)
                 }
             }
 
             Image {
-                id: relay10
+                id: relay1
                 width: respWidth(62)
                 height: respHeight(62)
                 source: "qrc:/Assets/Images/relay_disabled.png"
 
                 Label {
-                    text: "R10"
+                    text: "R1"
                     color: "#1B1B1B"
                     font.family: "Poppins"
                     font.pixelSize: respAvg(24)
@@ -383,13 +364,13 @@ Window {
             }
 
             Image {
-                id: relay11
+                id: relay2
                 width: respWidth(62)
                 height: respHeight(62)
                 source: "qrc:/Assets/Images/relay_disabled.png"
 
                 Label {
-                    text: "R11"
+                    text: "R2"
                     color: "#1B1B1B"
                     font.family: "Poppins"
                     font.pixelSize: respAvg(24)
@@ -402,13 +383,13 @@ Window {
             }
 
             Image {
-                id: relay12
+                id: relay3
                 width: respWidth(62)
                 height: respHeight(62)
                 source: "qrc:/Assets/Images/relay_disabled.png"
 
                 Label {
-                    text: "R12"
+                    text: "R3"
                     color: "#1B1B1B"
                     font.family: "Poppins"
                     font.pixelSize: respAvg(24)
@@ -421,13 +402,13 @@ Window {
             }
 
             Image {
-                id: relay13
+                id: relay4
                 width: respWidth(62)
                 height: respHeight(62)
                 source: "qrc:/Assets/Images/relay_disabled.png"
 
                 Label {
-                    text: "R13"
+                    text: "R4"
                     color: "#1B1B1B"
                     font.family: "Poppins"
                     font.pixelSize: respAvg(24)
@@ -440,13 +421,13 @@ Window {
             }
 
             Image {
-                id: relay14
+                id: relay5
                 width: respWidth(62)
                 height: respHeight(62)
                 source: "qrc:/Assets/Images/relay_disabled.png"
 
                 Label {
-                    text: "R14"
+                    text: "R5"
                     color: "#1B1B1B"
                     font.family: "Poppins"
                     font.pixelSize: respAvg(24)
@@ -459,13 +440,13 @@ Window {
             }
 
             Image {
-                id: relay15
+                id: relay6
                 width: respWidth(62)
                 height: respHeight(62)
                 source: "qrc:/Assets/Images/relay_disabled.png"
 
                 Label {
-                    text: "R15"
+                    text: "R6"
                     color: "#1B1B1B"
                     font.family: "Poppins"
                     font.pixelSize: respAvg(24)
@@ -478,13 +459,13 @@ Window {
             }
 
             Image {
-                id: relay16
+                id: relay7
                 width: respWidth(62)
                 height: respHeight(62)
                 source: "qrc:/Assets/Images/relay_disabled.png"
 
                 Label {
-                    text: "R16"
+                    text: "R7"
                     color: "#1B1B1B"
                     font.family: "Poppins"
                     font.pixelSize: respAvg(24)
@@ -495,6 +476,26 @@ Window {
                     anchors.topMargin: respHeight(13)
                 }
             }
+
+            Image {
+                id: relay8
+                width: respWidth(62)
+                height: respHeight(62)
+                source: "qrc:/Assets/Images/relay_disabled.png"
+
+                Label {
+                    text: "R8"
+                    color: "#1B1B1B"
+                    font.family: "Poppins"
+                    font.pixelSize: respAvg(24)
+                    font.weight: Font.DemiBold
+
+                    anchors.top: parent.bottom
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.topMargin: respHeight(13)
+                }
+            }
+
         }
 
         PushButton {
